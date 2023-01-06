@@ -13,7 +13,7 @@ const io = socketIo(server, {
     }
 })
 
-const robotUrl = process.env.ROBOT_URL || "http://localhost:5000/"
+const robotUrl = process.env.ROBOT_URL || "https://chachi.onrender.com"
 const url = process.env.URL || "192.168.0.10"
 
 const robotUser = {username: "GPT-3"}
