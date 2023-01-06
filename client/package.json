@@ -1,0 +1,70 @@
+{
+  "homepage": "https://avramdj.github.io/react-gpt3-chat/",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.13.15",
+    "@headlessui/react": "^1.0.0",
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "dotenv": "^8.2.0",
+    "framer-motion": "^4.1.3",
+    "konva": "^7.2.5",
+    "postcss": "^8.2.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-google-login": "^5.2.2",
+    "react-meta-tags": "^1.0.1",
+    "react-redux": "^7.2.3",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.0",
+    "react-spring": "^9.1.1",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "socket.io-client": "^4.0.1",
+    "typescript": "^4.2.4",
+    "universal-cookie": "^4.0.4",
+    "web-vitals": "^1.1.1"
+  },
+  "scripts": {
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "predeploy": "npm run build",
+    "deploy": "GH_DEPLOY=true gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "gh-pages": "^3.2.3",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.19"
+  },
+  "proxy": "http://192.168.0.10:4000"
+}
